@@ -1,0 +1,12 @@
+target
+*.class
+*.iml
+*.ipr
+*.iws
+.idea
+out
+/bin/
+/.cache-main
+/.cache-tests
+/.classpath
+/.project

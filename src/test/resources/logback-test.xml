@@ -1,0 +1,32 @@
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <Pattern>[%date] %-6r %-5p [%t] %logger{0} - %m%n</Pattern>
+    </encoder>
+  </appender>
+
+  <logger name="play" level="INFO" />
+  <logger name="org" level="INFO"/>
+  <logger name="com.google.inject.internal" level="INFO"/>
+  <logger name="org.apache.ignite" level="ERROR"/>
+  <logger name="com.ning" level="ERROR"/>
+   <!-- Change to DEBUG to print all the application log messages -->
+   <logger name="application" level="OFF" />
+  <logger name="com" level="OFF"/>
+  <logger name="akka" level="OFF"/>
+   <!-- Change to DEBUG to print all the Slick log messages -->
+  <logger name="slick.jdbc.JdbcBackend.statement" level="OFF"/>
+  <logger name="slick.jdbc.StatementInvoker.result" level="OFF" />
+  <logger name="slick.compiler.QueryCompilerBenchmark" level="OFF" />
+  <logger name="slick.basic.BasicBackend.action" level="OFF" />
+  <!-- Off by default by Play -->
+  <logger name="com.avaje.ebean.config.PropertyMapLoader" level="OFF" />
+  <logger name="com.avaje.ebeaninternal.server.core.XmlConfigLoader" level="OFF" />
+  <logger name="com.avaje.ebeaninternal.server.lib.BackgroundThread" level="OFF" />
+  <logger name="com.gargoylesoftware.htmlunit.javascript" level="OFF" />
+  
+  <root level="OFF">
+    <appender-ref ref="STDOUT"/>
+  </root> 
+
+</configuration>
